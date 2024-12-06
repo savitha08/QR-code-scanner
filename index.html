@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Scanner</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://unpkg.com/html5-qrcode/minified/html5-qrcode.min.js"></script>
+</head>
+<body>
+  <div class="scanner-container">
+    <h1>QR Code Scanner</h1>
+    <div id="reader" class="scanner"></div>
+    
+<p id="error-message" style="color: red; display: none;">Error: Unable to access the camera. Check permissions or device settings.</p>
+
+    <div id="result-container">
+      <h2>Scanned Result:</h2>
+      <p id="result">No QR code scanned yet.</p>
+      <button id="action-btn" style="display: none;">Open Link</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+<!-- <div id="reader" class="scanner"></div>
+<p id="error-message" style="color: red; display: none;">Error: Unable to access the camera. Check permissions or device settings.</p> -->
